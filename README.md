@@ -240,3 +240,11 @@
     token : {type : String},
     nickname : {type : String},
     text : {type : String}
+    
+### Log
+> Log Schema
+
+    id : {type : String},
+    time : {type : String},
+    date : {type : String},
+    title : {type : String}
