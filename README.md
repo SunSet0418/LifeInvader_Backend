@@ -75,6 +75,40 @@
 
     render main.html
     
+### Keyword
+#### /keyword/query (연관검색어 추천) [POST]
+>Requiring Params
+
+    No Params
+    
+>Return Values
+>>Success
+
+>>Not Founded
+
+    
+#### /keyword/hot (핫한 추천 키워드) [POST]
+>Requiring Params
+
+    No Params
+
+>Return Values
+>>Success
+
+>>Not Founded
+
+
+#### /keyword/user (사용차 추천 키워드)    
+>Requiring Parmas
+    
+    No Params
+    
+>Return Values
+>>Success
+
+>>Not Founded
+
+
 ### Search [GET, POST]
 #### /search/result [GET]
 >Return Values
