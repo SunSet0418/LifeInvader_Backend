@@ -1,0 +1,310 @@
+.flex(){
+  display:flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+
+.flex-center(){
+  display:flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  align-items:center;
+  -ms-flex-align:center;
+  -webkit-align-items:center;
+
+  -ms-flex-pack:center;
+  justify-content:center;
+  -webkit-justify-content:center;
+}
+
+.flex-align-center() {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+}
+
+.flex-align-end() {
+  display:flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  align-items:center;
+  -ms-flex-align:center;
+  -webkit-align-items:center;
+
+  -ms-flex-pack:end;
+  justify-content:flex-end;
+  -webkit-justify-content:flex-end;
+}
+
+.flex-align-between() {
+  display:flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  align-items:center;
+  -ms-flex-align:center;
+  -webkit-align-items:center;
+
+  -ms-flex-pack:justify;
+  justify-content:space-between;
+  -webkit-justify-content:space-between;
+}
+
+.flex-align-start() {
+  display:flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  align-items:center;
+  -ms-flex-align:center;
+  -webkit-align-items:center;
+
+  -ms-flex-pack:start;
+  justify-content:start;
+  -webkit-justify-content:flex-start;
+}
+
+.flex-align-around() {
+  display:flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  align-items:center;
+  -ms-flex-align:center;
+  -webkit-align-items:center;
+
+  -ms-flex-pack:justify;
+  justify-content:space-around;
+  -webkit-justify-content:space-around;
+}
+
+.flex-bottom-around() {
+  display:flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  align-items:flex-end;
+  -ms-flex-align:end;
+  -webkit-align-items:flex-end;
+
+  -ms-flex-pack:justify;
+  justify-content:space-around;
+  -webkit-justify-content:space-around;
+}
+
+*{
+  margin:0;
+  font-family:'NanumBarunGothic',sans-serif;
+}
+
+body{
+  width:100vw;
+  height:100vh;
+
+  overflow:hidden;
+}
+
+.header{
+  width:100%;
+  height:8%;
+
+  .flex-center;
+  box-shadow:2px 2px 5px 5px rgb(224,224,224);
+
+}
+
+.header > .logo{
+  background-size:cover;
+  background-image:url('./resource/logo_all.png');
+  width:319px;
+  height:37px;
+}
+
+.main-content{
+  background-color:rgb(231,238,243);
+
+  width:100%;
+  height:92%;
+
+  margin-top:5px;
+
+  .flex-center;
+}
+
+.main-content > .main-content-box{
+  width:55%;
+  height:65%;
+
+  .flex-align-between;
+}
+
+.main-content > .main-content-box > .login-box{
+  width:55%;
+  height:100%;
+
+  box-shadow:2px 2px 5px 5px rgb(224,224,224);
+
+  background-color:#fff;
+}
+
+.main-content > .main-content-box > .login-box > .login-header{
+  width:85%;
+  height:12%;
+
+  margin:auto;
+
+  border-bottom: 2px solid rgb(240,240,240);
+
+  .flex-align-center;
+
+  color:rgb(129,129,129);
+  font-size:18px;
+}
+
+.main-content > .main-content-box > .login-box > .input-box{
+  width:85%;
+  height:9%;
+
+  margin:auto;
+  margin-top:20px;
+}
+
+.main-content > .main-content-box > .login-box > .input-box > input{
+  width:calc(~"100% - 25px");
+  height:calc(~"100% - 2px");
+
+  padding-left:20px;
+
+  font-size:14px;
+  color:rgb(129,129,129);
+
+  border:1px solid rgb(220,220,220);
+  border-radius:100px;
+  outline:none;
+}
+
+.main-content > .main-content-box > .login-box > .login-btn{
+  width:85%;
+  height:9%;
+
+  margin:auto;
+  margin-top:30px;
+
+  border-radius:100px;
+
+  background: linear-gradient(-90deg , rgb(82,147,224) , rgb(140,230,210));
+
+  .flex-center;
+  font-size:14px;
+  color:#fff;
+
+  cursor:pointer;
+
+}
+
+.main-content > .main-content-box > .passport-box{
+  width:40%;
+  height:100%;
+
+  box-shadow:2px 2px 5px 5px rgb(224,224,224);
+
+  background-color:#fff;
+}
+
+.main-content > .main-content-box > .passport-box > .passport-header{
+  width:85%;
+  height:12%;
+
+  margin:auto;
+
+  border-bottom: 2px solid rgb(240,240,240);
+
+  .flex-align-center;
+
+  color:rgb(129,129,129);
+  font-size:18px;
+}
+
+.main-content > .main-content-box > .passport-box > .passport-btn{
+  width:85%;
+  height:9%;
+
+  .flex-center;
+
+  border-radius:100px;
+
+  cursor:pointer;
+
+  margin:auto;
+  margin-top:20px;
+
+  color:#fff;
+  font-size:10px;
+  font-family:sans-serif;
+  font-weight:200;
+}
+
+.main-content > .main-content-box > .passport-box > .google{
+  background-color:rgb(205,85,66);
+}
+
+.main-content > .main-content-box > .passport-box > .google > i{
+  color:#fff;
+  font-size:18px;
+  margin-right:10px;
+}
+
+.main-content > .main-content-box > .passport-box > .naver{
+  background-color:rgb(95,197,58);
+}
+
+.main-content > .main-content-box > .passport-box > .naver > .naver-logo{
+  background-image: url("resource/ic_login_naver.png");
+  background-size:cover;
+  width:13px;
+  height:11px;
+
+  margin-right:20px;
+}
+
+.main-content > .main-content-box > .passport-box > .facebook{
+  background-color:rgb(66,88,148);
+}
+
+.main-content > .main-content-box > .passport-box > .facebook > i{
+  color:#fff;
+  font-size:18px;
+  margin-left:10px;
+}
+
+.main-content > .main-content-box > .passport-box > h4{
+  color:rgb(78,78,78);
+  font-size:24px;
+
+  text-align:center;
+  margin-top:40px;
+  margin-bottom:10px;
+}
+
+.main-content > .main-content-box > .passport-box > .bottom-box{
+  width:10%;
+  border-bottom:4px solid rgb(78,78,78);
+  margin:auto;
+  margin-bottom:20px;
+}
+
+.main-content > .main-content-box > .passport-box > p{
+  font-size:13px;
+  font-weight:100;
+
+  font-family: sans-serif;
+
+  color:rgb(78,78,78);
+  text-align:center;
+}

@@ -1,0 +1,171 @@
+.flex(){
+  display:flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+
+.flex-center(){
+  display:flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  align-items:center;
+  -ms-flex-align:center;
+  -webkit-align-items:center;
+
+  -ms-flex-pack:center;
+  justify-content:center;
+  -webkit-justify-content:center;
+}
+
+.flex-align-center() {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+}
+
+.flex-align-end() {
+  display:flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  align-items:center;
+  -ms-flex-align:center;
+  -webkit-align-items:center;
+
+  -ms-flex-pack:end;
+  justify-content:flex-end;
+  -webkit-justify-content:flex-end;
+}
+
+.flex-align-between() {
+  display:flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  align-items:center;
+  -ms-flex-align:center;
+  -webkit-align-items:center;
+
+  -ms-flex-pack:justify;
+  justify-content:space-between;
+  -webkit-justify-content:space-between;
+}
+
+.flex-align-start() {
+  display:flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  align-items:center;
+  -ms-flex-align:center;
+  -webkit-align-items:center;
+
+  -ms-flex-pack:start;
+  justify-content:start;
+  -webkit-justify-content:flex-start;
+}
+
+.flex-align-around() {
+  display:flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  align-items:center;
+  -ms-flex-align:center;
+  -webkit-align-items:center;
+
+  -ms-flex-pack:justify;
+  justify-content:space-around;
+  -webkit-justify-content:space-around;
+}
+
+.flex-bottom-around() {
+  display:flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  align-items:flex-end;
+  -ms-flex-align:end;
+  -webkit-align-items:flex-end;
+
+  -ms-flex-pack:justify;
+  justify-content:space-around;
+  -webkit-justify-content:space-around;
+}
+
+
+*{
+  margin:0;
+  font-family: 'NanumBarunGothic', sans-serif;
+}
+
+body{
+  width:100vw;
+  height:100vh;
+
+  overflow:hidden;
+}
+
+.header{
+  width:100%;
+  height:24%;
+
+  .flex-center;
+}
+
+.header > .logo{
+  background-size:cover;
+  background-image: url("resource/logo_startsize.png");
+
+  width:428px;
+  height:50px;
+}
+
+.main-content{
+  background-size:cover;
+  background-image:url("resource/bg_img_start.png");
+  height:400px;
+}
+
+.btn-box{
+  width:100%;
+  height:20%;
+
+  margin-top:40px;
+
+
+  .flex-center;
+}
+
+.btn-box > .btn{
+  width:13%;
+  height:28%;
+
+  border-radius:100px;
+
+  .flex-center;
+
+  cursor:pointer;
+
+  font-size:12px;
+  font-weight:100;
+  font-family:sans-serif;
+}
+
+.btn-box > .login{
+  background: linear-gradient(-90deg , rgb(82,147,224) , rgb(140,230,210));
+  color:#fff;
+
+  margin-right:30px;
+}
+
+.btn-box > .register{
+  border:1px solid rgb(82,147,224);
+  color:black;
+  margin-left:30px;
+}

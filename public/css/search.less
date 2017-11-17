@@ -1,0 +1,356 @@
+.flex(){
+  display:flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+
+.flex-center(){
+  display:flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  align-items:center;
+  -ms-flex-align:center;
+  -webkit-align-items:center;
+
+  -ms-flex-pack:center;
+  justify-content:center;
+  -webkit-justify-content:center;
+}
+
+.flex-align-center() {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+}
+
+.flex-align-end() {
+  display:flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  align-items:center;
+  -ms-flex-align:center;
+  -webkit-align-items:center;
+
+  -ms-flex-pack:end;
+  justify-content:flex-end;
+  -webkit-justify-content:flex-end;
+}
+
+.flex-align-between() {
+  display:flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  align-items:center;
+  -ms-flex-align:center;
+  -webkit-align-items:center;
+
+  -ms-flex-pack:justify;
+  justify-content:space-between;
+  -webkit-justify-content:space-between;
+}
+
+.flex-align-start() {
+  display:flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  align-items:center;
+  -ms-flex-align:center;
+  -webkit-align-items:center;
+
+  -ms-flex-pack:start;
+  justify-content:start;
+  -webkit-justify-content:flex-start;
+}
+
+.flex-align-around() {
+  display:flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  align-items:center;
+  -ms-flex-align:center;
+  -webkit-align-items:center;
+
+  -ms-flex-pack:justify;
+  justify-content:space-around;
+  -webkit-justify-content:space-around;
+}
+
+.flex-bottom-around() {
+  display:flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  align-items:flex-end;
+  -ms-flex-align:end;
+  -webkit-align-items:flex-end;
+
+  -ms-flex-pack:justify;
+  justify-content:space-around;
+  -webkit-justify-content:space-around;
+}
+
+*{
+  margin:0;
+  font-family:'NanumBarunGothic',sans-serif;
+}
+
+body{
+  width:100vw;
+  height:100vh;
+
+  overflow:hidden;
+}
+
+.header{
+  width:100%;
+  height:8%;
+
+  .flex-center;
+  box-shadow:2px 2px 5px 5px rgb(224,224,224);
+
+}
+
+.header > .logo{
+  background-size:cover;
+  background-image:url('./resource/logo_all.png');
+  width:319px;
+  height:37px;
+}
+
+.main-content{
+  background-color:rgb(231,238,243);
+
+  width:100%;
+  height:92%;
+
+  margin-top:5px;
+
+  .flex-align-around;
+}
+
+.main-content > .search-box {
+  width:30%;
+  height:90%;
+}
+
+.main-content > .search-box >  .search-input-box{
+  width:100%;
+  height:25%;
+
+  .flex-center;
+}
+
+.main-content > .search-box > .search-input-box > .search-input{
+  width:100%;
+  height:30%;
+
+  border-radius:100px;
+  background-color:#fff;
+
+  box-shadow:2px 2px 5px 5px rgb(224,224,224);
+
+  .flex-align-around;
+}
+
+.main-content > .search-box > .search-input-box > .search-input > i{
+  color:rgb(82,147,224);
+}
+
+.main-content > .search-box > .search-input-box > .search-input > input{
+  outline:none;
+  border:none;
+  height:100%;
+  width:70%;
+
+  font-size:14px;
+  font-weight:200;
+  font-family:sans-serif;
+
+  color:rgb(94,94,94);
+}
+
+.main-content > .search-box > .rank-box{
+  width:100%;
+  height:calc(~"50% - 20px");
+
+  box-shadow:2px 2px 5px 5px rgb(224,224,224);
+  background-color:#fff;
+
+  padding-top:20px;
+}
+
+.main-content > .search-box > .rank-box > .rank-box-header{
+  width:90%;
+  height:15%;
+
+  margin:auto;
+
+  .flex-center;
+
+  background: linear-gradient(-90deg , rgb(82,147,224) , rgb(140,230,210));
+  border-radius:100px;
+
+  color:#fff;
+  font-size:14px;
+  font-weight:100;
+  font-family:sans-serif;
+}
+
+.main-content > .search-box > .rank-box > .rank-box-content{
+  width:90%;
+  height:15%;
+
+  margin:auto;
+  margin-top:14px;
+  .flex-align-around;
+}
+
+.main-content > .search-box > .rank-box > .rank-box-content > .number{
+  width:50px;
+  height:50px;
+  border:1px solid rgb(220,220,220);
+  border-radius:100%;
+
+  .flex-center;
+
+  font-size:14px;
+  font-weight:200;
+  font-family:sans-serif;
+
+  color:rgb(94,94,94);
+}
+
+
+.main-content > .search-box > .rank-box > .rank-box-content > .rank-data{
+  width:80%;
+  height:90%;
+
+  border:1px solid rgb(220,220,220);
+  border-radius:100px;
+
+  .flex-center;
+
+  font-size:12px;
+  font-weight:200;
+  font-family:sans-serif;
+
+  color:rgb(94,94,94);
+}
+
+.main-content > .search-box > .share-box{
+  width:100%;
+  height:8%;
+
+  .flex-align-around;
+
+  background-color:#fff;
+
+
+  box-shadow:2px 2px 5px 5px rgb(224,224,224);
+
+  margin-top:5%;
+}
+
+.main-content > .search-box > .share-box > div{
+  width:30%;
+  height:45%;
+
+  .flex-center;
+
+}
+
+.main-content > .search-box > .share-box > .share-community{
+  border:1px solid rgb(220,220,220);
+  border-radius:100px;
+
+  color:rgb(174,174,174);
+
+  font-size:10px;
+}
+
+.main-content > .search-box > .share-box > .share-kakao{
+  border-radius:100px;
+  background-color:rgb(251,233,81);
+  .flex-center;
+}
+
+.main-content > .search-box > .share-box > .share-kakao > p{
+  font-size:10px;
+}
+
+.main-content > .search-box > .share-box > .share-kakao > i{
+  font-size:12px;
+  margin-right:3px;
+}
+
+.main-content > .search-box > .share-box > .share-facebook{
+  border-radius:100px;
+  background-color:rgb(66,88,148);
+  .flex-center;
+}
+
+.main-content > .search-box > .share-box > .share-facebook > p{
+  font-size:10px;
+  color:#fff;
+}
+
+.main-content > .search-box > .share-box > .share-facebook > i{
+  font-size:12px;
+  margin-right:3px;
+  color:#fff;
+
+}
+
+.main-content > .search-list{
+  width:60%;
+  height:90%;
+
+  overflow-y:auto;
+}
+
+.main-content > .search-list > .search-list-box{
+  width:100%;
+  height:30%;
+
+  .flex-align-between;
+
+  margin-top:30px;
+}
+
+.main-content > .search-list > .search-list-box > .search-list-box-content{
+  width:32%;
+  height:100%;
+
+  border-radius:10px;
+  box-shadow:2px 2px 5px 5px rgb(224,224,224);
+
+}
+
+.main-content > .search-list > .search-list-box > .search-list-box-content > img{
+  width:100%;
+  height:70%;
+
+  border-radius:10px 10px 0px 0px;
+}
+
+.main-content > .search-list > .search-list-box > .search-list-box-content > .footer{
+  width:100%;
+  height:30%;
+
+  background-color:#fff;
+
+  border-radius:0 0 10px 10px;
+
+  .flex-center;
+
+  margin-top:-5px;
+}
