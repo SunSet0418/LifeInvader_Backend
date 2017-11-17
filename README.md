@@ -79,13 +79,16 @@
 #### /keyword/query (연관검색어 추천) [POST]
 >Requiring Params
 
-    No Params
+    query : 검색어
     
 >Return Values
 >>Success
 
+    HTTP : 200, {success:true, data: Array}
+
 >>Not Founded
 
+    HTTP : 404, {success:false, message:"연관검색어를 유추할수 없습니다"}
     
 #### /keyword/hot (핫한 추천 키워드) [POST]
 >Requiring Params
@@ -95,8 +98,11 @@
 >Return Values
 >>Success
 
+    HTTP : 200, {success:true, data:Array}
+
 >>Not Founded
 
+    HTTP : 404, {success:false, message:"추천할만한 핫 키워드가 없습니다"}
 
 #### /keyword/user (사용차 추천 키워드)    
 >Requiring Parmas
@@ -106,7 +112,11 @@
 >Return Values
 >>Success
 
+    HTTP : 200, {success:true, data:Array}
+
 >>Not Founded
+
+    HTTP : 404, {success:false, message:"추천할만한 유저 추천 키워드가 없습니다"}
 
 
 ### Search [GET, POST]
@@ -114,20 +124,6 @@
 >Return Values
 
     render search.html
-    
-#### /keyword (검색어 추천 키워드) [POST]
->Requiring Params
-
-    query : 검색어
-    
->Return Values
->>Success 
-
-    HTTP : 200, {success:true, data : Array}
-    
->>Not Founded
-
-    HTTP : 404, {success:false, message : "연관검색어를 유추할수 없습니다"}
     
 #### /search (검색) [POST]
 >Requiring Params

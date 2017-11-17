@@ -1,6 +1,6 @@
 module.exports = keyword
 
-function keyword(app, db) {
+function keyword(app, db, request) {
 
     app.post('/keyword/query', (req, res)=>{
         var body = req.body
@@ -18,20 +18,51 @@ function keyword(app, db) {
                 res.send(404, {success:false, message:"연관검색어를 유추할수 없습니다"})
             }
             else{
-                res.send(200, eval(body))
+                res.send(200, {success:true, data: eval(body)})
             }
 
         });
     })
 
     app.post('/keyword/hot', (req, res)=>{
-        var body = req.body
-        db.
+        var result = new Array()
+        db.Log.find((err, data)=>{
+            if(err){
+                throw err
+            }
+            else if(data[0]){
+                var array = new Array(Math.floor(Math.random()*data.length),Math.floor(Math.random()*data.length),Math.floor(Math.random()*data.length),Math.floor(Math.random()*data.length))
+                console.log(array)
+                for (var i=0;i<4;i++){
+                    result[i] = data[array[i]].title
+                }
+                res.send(200, {success:true, data : result})
+
+            }
+            else if(!data[0]){
+                res.send(404, {success:false, message:"추천할만한 핫 키워드가 없습니다."})
+            }
+        })
     })
 
     app.post('/keyword/user', (req, res)=>{
-        db.Log.find({
-            id : session.id
+        var result = new Array()
+        db.Log.find((err, data)=>{
+            if(err){
+                throw err
+            }
+            else if(data[0]){
+                var array = new Array(Math.floor(Math.random()*data.length),Math.floor(Math.random()*data.length),Math.floor(Math.random()*data.length),Math.floor(Math.random()*data.length))
+                console.log(array)
+                for (var i=0;i<4;i++){
+                    result[i] = data[array[i]].title
+                }
+                res.send(200, {success:true, data : result})
+
+            }
+            else if(!data[0]){
+                res.send(404, {success:false, message:"추천할만한 유저 추천 키워드가 없습니다."})
+            }
         })
     })
 
