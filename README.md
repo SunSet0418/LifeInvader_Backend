@@ -76,7 +76,12 @@
     render main.html
     
 ### Search [GET, POST]
-#### /search (검색) [POST]
+#### /search/result [GET]
+>Return Values
+
+    render search.html
+    
+#### /keyword (검색어 추천 키워드) [POST]
 >Requiring Params
 
     query : 검색어
@@ -84,7 +89,22 @@
 >Return Values
 >>Success 
 
+    HTTP : 200, {success:true, data : Array}
     
+>>Not Founded
+
+    HTTP : 404, {success:false, message : "연관검색어를 유추할수 없습니다"}
+    
+#### /search (검색) [POST]
+>Requiring Params
+
+    query : 검색어
+    
+>Return Values
+>>Success
+    
+    HTTP : 200, {success:true, data : JSONArray}
+
 
 ### Post
 #### /post/list [GET]

@@ -1,6 +1,7 @@
 var express = require('express')
 var session = require('express-session')
 var bodyParser = require('body-parser')
+var request = require('request')
 var app = express()
 var moment = require('moment')
 var ejs = require('ejs')
@@ -43,4 +44,4 @@ app.listen(PORT, ()=>{
 require('./routes/auth')(app, db, session)
 require('./routes/index')(app, db, session)
 require('./routes/post')(app, db, session, RandomString, moment)
-require('./routes/search')(app, db, session, moment)
+require('./routes/search')(app, db, session, moment, request)
