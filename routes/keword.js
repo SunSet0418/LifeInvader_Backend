@@ -5,7 +5,7 @@ function keyword(app, db, request) {
     app.post('/keyword/query', (req, res)=>{
         var body = req.body
         var options = { method: 'POST',
-            url: 'http://localhost:2000/data',
+            url: 'http://soylatte.kr:2000/data',
             headers:
                 { 'postman-token': '86887a00-2270-5cff-a77e-676af61a651a',
                     'cache-control': 'no-cache',
