@@ -40,11 +40,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="keword.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/keword.js">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="66" column="6" lean-forward="true" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
+            <state relative-caret-position="442">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,7 +122,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="post.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/post.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="307">
@@ -132,14 +132,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/search.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#50#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="383">
+              <caret line="42" column="28" lean-forward="false" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -396,12 +394,12 @@
       <option name="presentableId" value="Default" />
       <updated>1510851761199</updated>
       <workItem from="1510851763807" duration="18180000" />
-      <workItem from="1510922095507" duration="4723000" />
+      <workItem from="1510922095507" duration="4793000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22903000" />
+    <option name="totallyTimeSpent" value="22973000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -414,7 +412,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24876674" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979977" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -422,7 +420,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979977" sideWeight="0.4930681" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.4954792" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.4954792" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -560,14 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -584,14 +574,6 @@
             <marker date="1510926010000" expanded="true" signature="1709:1925" ph="..." />
             <marker date="1510926010000" expanded="true" signature="1766:1895" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="42" column="28" lean-forward="false" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -671,14 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/write.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="50" column="43" lean-forward="false" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/keword.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -741,6 +715,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
           <caret line="63" column="18" lean-forward="false" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="42" column="28" lean-forward="false" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/write.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="50" column="43" lean-forward="false" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
