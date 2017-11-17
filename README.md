@@ -84,6 +84,7 @@
 >Return Values
 >>Success 
 
+    
 
 ### Post
 #### /post/list [GET]
@@ -144,10 +145,25 @@
     
     HTTP : 200, {success:true, message:"포스팅 성공"}  
     
+### Log
+#### /log [GET]
+>Return Values
 
+    render log.html
     
-   
+#### /log [POST]
+>Requiring Params
 
+    id : 아이디(서버 세션으로 처리)
+    
+>Return Values
+>>Success
+
+    HTTP : 200, {success:true, data : JSONArray}
+
+>>Not Founded
+
+    HTTP : 404, {success:false, message : "로그가 존재하지 않습니다."} 
         
 ## Database Schema
 
