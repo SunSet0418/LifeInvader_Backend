@@ -42,7 +42,7 @@ $(document).ready(function () {
         success:function (data) {
             for(var i = 0; i<4; i++){
                 var num = i + 1;
-                $(".rank-"+num).text(data[i]);
+                $(".rank-"+num).text(data.data[i]);
             }
         },
         error:function (err) {
