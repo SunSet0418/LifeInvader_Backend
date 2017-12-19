@@ -1,6 +1,24 @@
 /**
  * Created by janghunlee on 2017. 11. 17..
  */
+
+$(document).ready(function () {
+    $.ajax({
+        method:"POST",
+        url:"/keyword/hot",
+        success:function (data) {
+            console.log(data)
+            for(var i = 0; i<4; i++){
+                var num = i + 1;
+                $(".content-"+num).text(data.data[i]);
+            }
+        },
+        error:function (er) {
+            console.log(er)
+        }
+    });
+});
+
 $(".fa-search").click(function () {
     // var query = $(".search-text").val();
     // console.log(query);

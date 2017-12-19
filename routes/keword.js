@@ -37,10 +37,12 @@ function keyword(app, db, request) {
                 for (var i=0;i<4;i++){
                     result[i] = data[array[i]].title
                 }
+                console.log(result)
                 res.send(200, {success:true, data : result})
 
             }
             else if(!data[0]){
+                console.log()
                 res.send(404, {success:false, message:"추천할만한 핫 키워드가 없습니다."})
             }
         })
