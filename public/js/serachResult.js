@@ -2,7 +2,7 @@
  * Created by janghunlee on 2017. 11. 17..
  */
 $(document).ready(function () {
-    var query = location.href.split("query=")[1];
+    var query = decodeURIComponent(location.href.split("query=")[1]);
     console.log(query);
 
     $.ajax({
@@ -13,9 +13,6 @@ $(document).ready(function () {
             console.log(data);
 
             var inputData = '<div class="search-list-box">';
-
-
-
 
             for(var i = 0; i<data.length; i++){
                 if(i != 0 && i%3 == 0){
@@ -40,6 +37,7 @@ $(document).ready(function () {
         url:"/keyword/query",
         data:{"query":query},
         success:function (data) {
+            console.log(data)
             for(var i = 0; i<4; i++){
                 var num = i + 1;
                 $(".rank-"+num).text(data.data[i]);
@@ -49,4 +47,8 @@ $(document).ready(function () {
 
         }
     })
+});
+
+$(".fa-search").click(function () {
+   location.href="/search/result?query="+$(".input").val();
 });

@@ -4,6 +4,7 @@ function keyword(app, db, request) {
 
     app.post('/keyword/query', (req, res)=>{
         var body = req.body
+        console.log(body)
         var options = { method: 'POST',
             url: 'http://localhost:2000/data',
             headers:

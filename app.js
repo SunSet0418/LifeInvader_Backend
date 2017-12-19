@@ -6,7 +6,7 @@ var app = express()
 var moment = require('moment')
 var ejs = require('ejs')
 var RandomString = require('randomstring')
-var PORT = process.env.PORT || 8080
+var PORT = process.env.PORT || 3000
 var logger = require('morgan')
 var db = require('./database/mongo')
 
@@ -17,7 +17,6 @@ app.use(bodyParser.urlencoded({
 app.use(logger('dev'))
 
 app.use(express.static('public'))
-
 
 app.use(session({
     secret: 'YEAH!@#%!@%#!@#%!@#%!@#%!@#$SESSION@#$^!@$^!^@$SECRET',
